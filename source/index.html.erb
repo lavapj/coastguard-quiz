@@ -4,7 +4,7 @@ title: Coast Guard Quiz
 
 <h1>Coast Guard Rank Quiz</h1>
 
-<h3>Guess the enlisted insignia below:</h3>
+<h3>Guess the rank or rate below:</h3>
 
 <%
 
@@ -98,12 +98,21 @@ cmc = {
   paygrade: "E-9"
 }
  
-mcpoc = {
+mcpocg = {
   img:  "<img src = 'images/mcpoc.png'>",
   name: "Master Chief Petty Officer Of The Coast Guard",
   en_class: "Chief Petty Officer (Special)",
-  abbr: "MCPOC",
+  abbr: "MCPOCG",
   title:"Master Chief Petty Officer Of The Coast Guard (last name)",
+  paygrade: "E-9"
+}
+
+amcpo = {
+  img:  "<img src = 'images/amcpo.png'>",
+  name: "Area Command Master Chief PO / Master Chief Petty Officer Of The Coast Guard Reserve",
+  en_class: "",
+  abbr: "AMCPO",
+  title:"",
   paygrade: "E-9"
 }
  
@@ -224,7 +233,7 @@ adm = {
   paygrade: "O-10"
 }
 
-ranks = [sr, sa, sn, po3, po2, po1, cpo, scpo, mcpo, cmc, mcpoc, cwo2, cwo3, cwo4, ens, ltjg, lt, lcdr, cdr, capt, rdml, radm, vadm, adm]
+ranks = [sr, sa, sn, po3, po2, po1, cpo, scpo, mcpo, cmc, mcpocg, cwo2, cwo3, cwo4, ens, ltjg, lt, lcdr, cdr, capt, rdml, radm, vadm, adm]
 
 current_rank = ranks.shuffle!.first
 
@@ -246,7 +255,7 @@ paygrade_now = current_rank[:paygrade]
 		<p><%= abbr_now %></p>
 		<p><%= title_now %></p>
 		<p><%= paygrade_now %></p>
-		<a href="javascript:;" onClick="document.getElementById('hideaway').style.display='none'; document.getElementById('showme').style.display='block'">Hide Answer</a>
+		<a class="butt" href="javascript:;" onClick="document.getElementById('hideaway').style.display='none'; document.getElementById('showme').style.display='block'">Hide Answer</a>
 	</div>
 
 	<div id="showme">
@@ -256,4 +265,4 @@ paygrade_now = current_rank[:paygrade]
 </div>
 
 
-<a href="javascript:;" onClick="window.location.reload()">Click to refresh</a>
+<a class="butt" href="javascript:;" onClick="window.location.reload()">Click to refresh</a>
