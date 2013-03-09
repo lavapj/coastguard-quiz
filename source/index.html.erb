@@ -8,7 +8,7 @@ title: Coast Guard Quiz
 
 <%
 
-seaman_recruit = {
+sr = {
 	img: "<img src = 'images/USCG_SR.png'>",
 	name: "Seaman Recruit",
 	en_class: "Seaman",
@@ -17,7 +17,7 @@ seaman_recruit = {
 	paygrade: "E1"
 }
 
-seaman_apprentice = {
+sa = {
 	img: "<img src = 'images/USCG_SA.png'>",
 	name: "Seaman Apprentice",
 	en_class: "Seaman",
@@ -26,7 +26,7 @@ seaman_apprentice = {
 	paygrade: "E2"
 }
 
-seaman = {
+sn = {
 	img:  "<img src = 'images/USCG_SM.png'>",
 	name: "Seaman",
 	en_class: "Seaman",
@@ -35,7 +35,7 @@ seaman = {
 	paygrade: "E3"
 }
 
-pettyofficer3 = {
+po3 = {
 	img:  "<img src = 'images/USCG_PO3.svg'>",
 	name: "Petty Officer Third Class",
 	en_class: "Petty Officer",
@@ -44,7 +44,7 @@ pettyofficer3 = {
 	paygrade: "E-4"
 }
 
-pettyofficer2 = {
+po2 = {
 	img:  "<img src = 'images/USCG_PO2.svg'>",
 	name: "Petty Officer Second Class",
 	en_class: "Petty Officer",
@@ -53,7 +53,7 @@ pettyofficer2 = {
 	paygrade: "E-5"
 }
 
-pettyofficer1 = {
+po1 = {
 	img:  "<img src = 'images/USCG_PO1.svg'>",
 	name: "Petty Officer First Class",
 	en_class: "Petty Officer",
@@ -62,52 +62,169 @@ pettyofficer1 = {
 	paygrade: "E-6"
 }
 
-xxx = {
-	img:  "<img src = 'xxx'>",
-	name: "xxx",
-	en_class: "xxx",
-	abbr: "xx",
-	title:"xxx",
-	paygrade: "xx"
+cpo = {
+  img:  "<img src = 'images/cpo.gif'>",
+  name: "Chief Petty Officer",
+  en_class: "Chief Petty Officer",
+  abbr: "CPO",
+  title:"Chief Petty Officer (last name)",
+  paygrade: "E-7"
+}
+ 
+scpo = {
+  img:  "<img src = 'images/scpo.gif'>",
+  name: "Senior Chief Petty Officer",
+  en_class: "Chief Petty Officer",
+  abbr: "SCPO",
+  title:"Chief Petty Officer (last name)",
+  paygrade: "E-8"
+}
+ 
+mcpo = {
+  img:  "<img src = 'images/mcpo.gif'>",
+  name: "Master Chief Petty Officer",
+  en_class: "Chief Petty Officer",
+  abbr: "MCPO",
+  title:"Chief Petty Officer (last name)",
+  paygrade: "E-9"
+}
+ 
+cmc = {
+  img:  "<img src = 'images/cmc.gif'>",
+  name: "Command Master Chief Petty Officer",
+  en_class: "Chief Petty Officer",
+  abbr: "CMC",
+  title:"Command Master Chief Petty Officer (last name)",
+  paygrade: "E-9"
+}
+ 
+mcpoc = {
+  img:  "<img src = 'images/mcpoc.gif'>",
+  name: "Master Chief Petty Officer Of The Coast Guard",
+  en_class: "Chief Petty Officer (Special)",
+  abbr: "MCPOC",
+  title:"Master Chief Petty Officer Of The Coast Guard (last name)",
+  paygrade: "E-9"
+}
+ 
+cwo2 = {
+  img:  "<img src = 'images/cwo2.gif'>",
+  name: "Chief Warrant Officer 2",
+  en_class: "Chief Warrant Officer",
+  abbr: "CWO-2",
+  title:"Mr. (last name) or Chief (last name)",
+  paygrade: "W-2"
+}
+ 
+cwo3 = {
+  img:  "<img src = 'images/cwo3.gif'>",
+  name: "Chief Warrant Officer 3",
+  en_class: "Chief Warrant Officer",
+  abbr: "CWO-3",
+  title:"Mr. (last name) or Chief (last name)",
+  paygrade: "W-3"
+}
+ 
+cwo4 = {
+  img:  "<img src = 'images/cwo4.gif'>",
+  name: "Chief Warrant Officer 4",
+  en_class: "Chief Warrant Officer",
+  abbr: "CWO-4",
+  title:"Mr. (last name) or Chief (last name)",
+  paygrade: "W-4"
+}
+ 
+ens = {
+  img:  "<img src = 'images/ens.gif'>",
+  name: "Ensign",
+  en_class: "Junior Officer",
+  abbr: "ENS",
+  title:"Ensign (last name)",
+  paygrade: "O-1"
+}
+ 
+ltjg = {
+  img:  "<img src = 'images/ltjg.gif'>",
+  name: "Lieutenant Junior Grade",
+  en_class: "Junior Officer",
+  abbr: "LTJG",
+  title:"Lieutenant (last name)",
+  paygrade: "O-2"
+}
+ 
+lt = {
+  img:  "<img src = 'images/lt.gif'>",
+  name: "Lieutenant",
+  en_class: "Junior Officer",
+  abbr: "LT",
+  title:"Lieutenant (last name)",
+  paygrade: "O-3"
+}
+ 
+lcdr = {
+  img:  "<img src = 'images/lcdr.gif'>",
+  name: "Lieutenant Commander",
+  en_class: "Junior Officer",
+  abbr: "LCDR",
+  title:"Lieutenant Commander (last name)",
+  paygrade: "O-4"
+}
+ 
+cdr = {
+  img:  "<img src = 'images/cdr.gif'>",
+  name: "Commander",
+  en_class: "Senior Officer",
+  abbr: "CDR",
+  title:"Commander (last name)",
+  paygrade: "O-5"
+}
+ 
+capt = {
+  img:  "<img src = 'images/capt.gif'>",
+  name: "Captain",
+  en_class: "Senior Officer",
+  abbr: "CAPT",
+  title:"Captain (last name)",
+  paygrade: "O-6"
+}
+ 
+rdml = {
+  img:  "<img src = 'images/rdml.gif'>",
+  name: "Rear Admiral Lower Half",
+  en_class: "Flag Officer",
+  abbr: "RDML",
+  title:"Rear Admiral (last name)",
+  paygrade: "O-7"
+}
+ 
+radm = {
+  img:  "<img src = 'images/radm.gif'>",
+  name: "Rear Admiral",
+  en_class: "Flag Officer",
+  abbr: "RADM",
+  title:"Rear Admiral (last name)",
+  paygrade: "O-8"
+}
+ 
+vadm = {
+  img:  "<img src = 'images/vadm.gif'>",
+  name: "Vice Admiral",
+  en_class: "Flag Officer",
+  abbr: "VADM",
+  title:"Admiral (last name)",
+  paygrade: "O-9"
+}
+ 
+adm = {
+  img:  "<img src = 'images/adm.gif'>",
+  name: "Admiral",
+  en_class: "Flag Officer",
+  abbr: "ADM",
+  title:"Admiral (last name)",
+  paygrade: "O-10"
 }
 
-xxx = {
-	img:  "<img src = 'xxx'>",
-	name: "xxx",
-	en_class: "xxx",
-	abbr: "xx",
-	title:"xxx",
-	paygrade: "xx"
-}
-
-xxx = {
-	img:  "<img src = 'xxx'>",
-	name: "xxx",
-	en_class: "xxx",
-	abbr: "xx",
-	title:"xxx",
-	paygrade: "xx"
-}
-
-xxx = {
-	img:  "<img src = 'xxx'>",
-	name: "xxx",
-	en_class: "xxx",
-	abbr: "xx",
-	title:"xxx",
-	paygrade: "xx"
-}
-
-xxx = {
-	img:  "<img src = 'xxx'>",
-	name: "xxx",
-	en_class: "xxx",
-	abbr: "xx",
-	title:"xxx",
-	paygrade: "xx"
-}
-
-ranks = [seaman_recruit, seaman_apprentice, seaman, pettyofficer3, pettyofficer2, pettyofficer1]
+ranks = [sr, sa, sn, po3, po2, po1, cpo, scpo, mcpo, cmc, mcpoc, cwo2, cwo3, cwo4, ens, ltjg, lt, lcdr, cdr, capt, rdml, radm, vadm, adm]
 
 current_rank = ranks.shuffle!.first
 
